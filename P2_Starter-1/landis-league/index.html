@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landis League &ndash; FSU Intramural Sports</title>
+  <meta name="description" content="Landis League, Florida State University's student intramural sports program.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============================================================
+     SITE HEADER + SHARED NAVIGATION
+     Identical on all four pages. Do not change this markup.
+     ============================================================ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="images/logo.png" alt="Landis League logo">
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule &amp; Standings</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.html">Register a Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="officiate.html">Officiate</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Landis League</h1>
+      <p class="hero-tagline">FSU's student-run intramural sports league &mdash; five sports, four fields, one green.</p>
+      <a class="btn btn-primary" href="register.html">Register a Team</a>
+    </div>
+  </section>
+
+  <!-- ============ THIS WEEK ============ -->
+  <section class="this-week" aria-labelledby="week-heading">
+    <h2 id="week-heading">This Week on the Green</h2>
+    <div class="game-grid">
+      <article class="game-card">
+        <p class="game-sport">Flag Football</p>
+        <p class="game-matchup">Garnet Storm <span class="vs">vs</span> Bench Warmers</p>
+        <p class="game-time">Tuesday &middot; 6:00 PM &middot; Field 2</p>
+      </article>
+      <article class="game-card">
+        <p class="game-sport">Sand Volleyball</p>
+        <p class="game-matchup">Dive Bar <span class="vs">vs</span> Set It Off</p>
+        <p class="game-time">Tuesday &middot; 7:00 PM &middot; Court B</p>
+      </article>
+      <article class="game-card">
+        <p class="game-sport">Basketball</p>
+        <p class="game-matchup">Landis Legends <span class="vs">vs</span> Union Ballers</p>
+        <p class="game-time">Wednesday &middot; 8:00 PM &middot; Court 1</p>
+      </article>
+      <article class="game-card">
+        <p class="game-sport">Soccer</p>
+        <p class="game-matchup">Tally FC <span class="vs">vs</span> The Offsides</p>
+        <p class="game-time">Thursday &middot; 6:30 PM &middot; Field 1</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT THE LEAGUE ============ -->
+  <article class="about-league" aria-labelledby="about-heading">
+    <h2 id="about-heading">About the League</h2>
+    <img class="about-photo" src="images/league-kickoff.jpg" alt="Students gathered on Landis Green for the Fall 2026 Landis League kickoff, holding team banners">
+    <p>Landis League started in 2011 as a single flag football bracket organized by a handful of
+      students who wanted somewhere to play after intramural signups closed early. It's now run
+      out of FSU Campus Recreation and fields more than eighty teams a semester across five
+      sports, all played on and around Landis Green.</p>
+    <p>Every game is officiated by fellow students, every schedule is built around exam weeks, and
+      every division &mdash; competitive, recreational, and co-rec &mdash; plays on the same fields
+      under the same lights. You don't need experience to sign up. You need a team name and six
+      friends willing to show up on time.</p>
+  </article>
+
+  <!-- ============ CHAMPION SPOTLIGHT ============ -->
+  <aside class="spotlight" aria-labelledby="spotlight-heading">
+    <h2 id="spotlight-heading">Champion Spotlight</h2>
+    <h3 class="spotlight-team">The Landis Legends</h3>
+    <p>Back-to-back basketball champions, the Legends went 14&ndash;0 across two seasons without
+      a single forfeit &mdash; a league record. Captain Devon Ashe credits it to a group chat that
+      never lets anyone forget game time.</p>
+  </aside>
+
+  <!-- ============ FIND THE FIELDS ============ -->
+  <section class="visit" aria-labelledby="visit-heading">
+    <h2 id="visit-heading">Find the Fields</h2>
+    <p>All Landis League games are played on the intramural fields and courts surrounding Landis
+      Green, a short walk from the Student Services Building. Check the schedule for your specific
+      field or court number before you head over.</p>
+    <iframe
+      class="map-embed"
+      title="Map showing the intramural fields at Landis Green, Florida State University"
+      src="https://www.google.com/maps?q=Landis+Green+Florida+State+University&amp;output=embed"
+      width="600" height="400" loading="lazy"></iframe>
+  </section>
+
+</main>
+
+<!-- ============ SITE FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-block">
+      <h2 class="footer-heading">Landis League</h2>
+      <address class="footer-address">
+        FSU Campus Recreation<br>
+        Fields at Landis Green<br>
+        Tallahassee, FL 32306<br>
+        Office: <a href="tel:+18505550142">(850) 555-0142</a><br>
+        Email: <a href="mailto:play@landisleague.example.edu">play@landisleague.example.edu</a>
+      </address>
+    </div>
+    <nav class="footer-nav" aria-label="Social media">
+      <ul class="footer-social">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Bluesky</a></li>
+        <li><a href="#">GroupMe</a></li>
+      </ul>
+    </nav>
+  </div>
+  <p class="footer-copy">&copy; 2026 Landis League. A Florida State University Campus Recreation program.</p>
+</footer>
+
+</body>
+</html>

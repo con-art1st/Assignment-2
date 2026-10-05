@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Officiate &ndash; Landis League</title>
+  <meta name="description" content="Become a game official, scorekeeper, or site supervisor for Landis League intramural sports.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="images/logo.png" alt="Landis League logo">
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule &amp; Standings</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.html">Register a Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="officiate.html">Officiate</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>Officiate for the League</h1>
+
+  <!-- ============ ROLE ARTICLES ============ -->
+  <article class="role-article" aria-labelledby="referee-heading">
+    <h2 id="referee-heading">Game Officials</h2>
+    <img class="role-photo" src="images/official-huddle.jpg" alt="Placeholder photo standing in for a pregame officials huddle">
+    <p>Officials run the games &mdash; calling fouls, tracking downs, keeping the clock, and making
+      the judgment calls that keep a rec-league game from turning into an argument. Every sport
+      pairs new officials with an experienced lead for their first two weeks, and Campus Rec runs
+      a required one-hour rules clinic before the season starts.</p>
+    <p>No refereeing experience is required. Plenty of officials are former players who wanted to
+      stay involved after their own team's season ended.</p>
+  </article>
+
+  <article class="role-article" aria-labelledby="scorekeeper-heading">
+    <h2 id="scorekeeper-heading">Scorekeepers &amp; Site Supervisors</h2>
+    <p>Scorekeepers track the game sheet and final score for basketball and dodgeball. Site
+      supervisors oversee an entire night at one location &mdash; checking in officials, handling
+      equipment, and resolving anything that comes up before it needs Campus Rec staff involved.
+      Both roles are a good fit if you'd rather stay off the field but still want to be part of
+      game night.</p>
+  </article>
+
+  <!-- ============ OPEN POSITIONS ============ -->
+  <section class="roles" aria-labelledby="roles-heading">
+    <h2 id="roles-heading">Open Positions</h2>
+    <div class="table-wrap">
+      <table class="roles-table">
+        <caption>Officiating positions for Fall 2026</caption>
+        <thead>
+          <tr>
+            <th scope="col">Position</th>
+            <th scope="col">Time Commitment</th>
+            <th scope="col">Requirements</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Flag Football Official</th>
+            <td>2 nights/week, 6&ndash;9 PM</td>
+            <td>Rules clinic attendance, closed-toe shoes</td>
+          </tr>
+          <tr>
+            <th scope="row">Basketball Official</th>
+            <td>2 nights/week, 6&ndash;10 PM</td>
+            <td>Rules clinic attendance, whistle provided</td>
+          </tr>
+          <tr>
+            <th scope="row">Volleyball Official</th>
+            <td>1 night/week, 7&ndash;9 PM</td>
+            <td>Rules clinic attendance</td>
+          </tr>
+          <tr>
+            <th scope="row">Scorekeeper</th>
+            <td>1&ndash;2 nights/week, flexible</td>
+            <td>Comfortable with the game sheet app</td>
+          </tr>
+          <tr>
+            <th scope="row">Site Supervisor</th>
+            <td>1 full night/week</td>
+            <td>One prior semester officiating or scorekeeping</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ APPLICATION FORM ============ -->
+  <section class="apply" aria-labelledby="apply-heading">
+    <h2 id="apply-heading">Official Application</h2>
+    <form class="apply-form" method="post" action="#">
+      <div class="form-row">
+        <label for="applicant-name">Full Name</label>
+        <input type="text" id="applicant-name" name="applicant-name" required>
+      </div>
+
+      <div class="form-row">
+        <label for="applicant-email">FSU Email</label>
+        <input type="email" id="applicant-email" name="applicant-email" required>
+      </div>
+
+      <div class="form-row">
+        <label for="applicant-phone">Phone</label>
+        <input type="tel" id="applicant-phone" name="applicant-phone">
+      </div>
+
+      <div class="form-row">
+        <label for="sport-preference">Sport Preference</label>
+        <select id="sport-preference" name="sport-preference">
+          <optgroup label="On-Field">
+            <option>Flag Football</option>
+            <option>Soccer</option>
+          </optgroup>
+          <optgroup label="Indoor / Scoring">
+            <option>Basketball</option>
+            <option>Volleyball</option>
+            <option>Scorekeeper (any sport)</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <fieldset class="availability-group">
+        <legend>Availability</legend>
+        <div class="checkbox-list">
+          <label><input type="checkbox" name="availability" value="weekday-evenings"> Weekday evenings</label>
+          <label><input type="checkbox" name="availability" value="weekend-mornings"> Weekend mornings</label>
+          <label><input type="checkbox" name="availability" value="weekend-afternoons"> Weekend afternoons</label>
+        </div>
+      </fieldset>
+
+      <div class="form-row">
+        <label for="start-date">Available to Start</label>
+        <input type="date" id="start-date" name="start-date">
+      </div>
+
+      <div class="form-row form-row-full">
+        <label for="experience">Relevant Experience</label>
+        <textarea id="experience" name="experience" rows="4" maxlength="400"></textarea>
+      </div>
+
+      <div class="form-row form-row-checkbox">
+        <input type="checkbox" id="apply-agree" name="apply-agree" required>
+        <label for="apply-agree">I can attend the required rules clinic before the season starts</label>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Submit Application</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- ============ NEXT STEPS ============ -->
+  <section class="next-steps" aria-labelledby="next-heading">
+    <h2 id="next-heading">What Happens Next</h2>
+    <ol class="steps-list">
+      <li>Campus Rec reviews applications on a rolling basis, usually within a week.</li>
+      <li>You'll get an email with a rules clinic date for your sport.</li>
+      <li>Attend the one-hour clinic and pick up your official's shirt.</li>
+      <li>You'll be paired with an experienced official for your first two games.</li>
+      <li>After that, you pick up shifts through the officiating sign-up sheet each week.</li>
+    </ol>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-block">
+      <h2 class="footer-heading">Landis League</h2>
+      <address class="footer-address">
+        FSU Campus Recreation<br>
+        Fields at Landis Green<br>
+        Tallahassee, FL 32306<br>
+        Office: <a href="tel:+18505550142">(850) 555-0142</a><br>
+        Email: <a href="mailto:play@landisleague.example.edu">play@landisleague.example.edu</a>
+      </address>
+    </div>
+    <nav class="footer-nav" aria-label="Social media">
+      <ul class="footer-social">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Bluesky</a></li>
+        <li><a href="#">GroupMe</a></li>
+      </ul>
+    </nav>
+  </div>
+  <p class="footer-copy">&copy; 2026 Landis League. A Florida State University Campus Recreation program.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,424 @@
+/* styles.css */
+
+/* Style all headings the same way*/
+h1 {
+  color: #782f40;
+  background: #ceb888;
+  font-size: 32px;
+  font-family: Franklin Gothic;
+  text-align: left;
+  line-height: 1.5;
+}
+
+/*
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    background: blue;
+    color: yellow;
+    padding: 1rem, 2rem;
+    height: 60px;
+}
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a{
+    color: white; 
+    text-decoration: none;
+    font-weight: bold;
+} */
+/*
+.nav-links a:hover{
+    text-decoration: underline;
+}*/
+
+a {
+  color: #782f40;
+  transition: background-color;
+}
+a:hover {
+  background-color: #ffc72c;
+}
+
+/* Hero section is given a background image */
+.hero {
+  background-color: #5cb8b2;
+  text-align: center;
+  font-family: Georgia;
+  /*background-image: hero-fields;*/
+}
+
+/* Layout of this week on the green , has consistent spacing */
+.this-week {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #dfd1a7;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 1000px;
+  color: #782f40;
+  padding: 10px 20px;
+}
+
+.game-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.game-sport {
+  font-weight: bold;
+  color: #070733;
+  display: flex;
+  font-family: Georgia;
+}
+
+.game-matchup {
+  font-family: Georgia;
+}
+
+.game-time {
+  font-family: Georgia;
+}
+
+/*Article is styled for comfortable reading */
+.about-league {
+  max-width: 560px;
+  font-family: Georgia;
+}
+
+/* About Image is styled*/
+.about-photo {
+  border: 6px solid black;
+  border-radius: 4px;
+  padding: 10px;
+  background: violet;
+}
+
+.spotlight {
+  background: #a6192e;
+  border: 10px solid #425563;
+  padding: 30px;
+  font-family: Droid Sans;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.spotlight-team {
+  text-align: center;
+  font-family: Overpass;
+  font-size: 23px;
+  color: #ceb888;
+}
+
+/* Map is visually integrated */
+.map-embed {
+  border: 10px solid blue;
+}
+
+/* styled footer with background color and organized columns */
+.site-footer {
+  background-color: orange;
+}
+
+.footer-address {
+  display: grid;
+  grid-template-columns: 300px, 1fr;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+}
+
+.standings-table {
+  border: 5px solid #dfd1a7;
+  border-radius: 8px;
+  max-width: 1000px;
+  color: #782f40;
+  padding: 10px 20px;
+}
+
+.standings-table caption {
+  margin-bottom: 0.5rem;
+}
+
+/* distinct header row*/
+.standings-table thead {
+  font-size: larger;
+}
+
+.standings-table tr {
+  text-align: center;
+}
+
+/* alternating row colors*/
+.standings-table tbody tr:nth-child(2n + 1) {
+  background-color: grey;
+}
+
+/*hover highlight on row*/
+.standings-table tbody tr:hover {
+  background-color: yellow;
+}
+
+.games-table {
+  border: 5px solid #dfd1a7;
+  border-radius: 8px;
+  max-width: 1000px;
+  color: #782f40;
+  padding: 10px 20px;
+}
+
+.games-table caption {
+  margin-bottom: 0.5rem;
+}
+
+/* distinct header row*/
+.games-table thead {
+  font-size: larger;
+}
+
+.standings-table tr {
+  text-align: center;
+}
+
+/* alternating row colors*/
+.games-table tbody tr:nth-child(2n + 1) {
+  background-color: grey;
+}
+
+/*hover highlight on row*/
+.games-table tbody tr:hover {
+  background-color: yellow;
+}
+
+/* five sports cards laid out in responsive Flexbox, hover effect*/
+.sport-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border: 5px solid #dfd1a7;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 5000px;
+  color: #782f40;
+  padding: 10px 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.sport-grid p {
+  margin: 0 0 15px 0;
+}
+
+/*circular image*/
+.sport-photo {
+  border-radius: 50%;
+}
+
+.sport-grid article:hover {
+  background-color: palegreen;
+}
+
+/* styled glossary; terms v. definition*/
+.glossary dt {
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px solid #dfd1a7;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 200px;
+  color: #782f40;
+  padding: 10px 10px;
+  justify-content: center;
+  text-align: left;
+  font-weight: bold;
+  font-family: Courier;
+}
+
+.glossary dd {
+  display: flex;
+  padding: 10px 10px;
+  justify-content: left;
+  font-family: monospace;
+}
+
+/* 3. Register Team Page */
+
+/* consistent padding, borders and visible focus state */
+.register-form {
+  padding: 10px 40px;
+  border: 7px dotted #425563;
+}
+
+.form-section {
+  color: #782f40;
+  background: #ceb888;
+
+  line-height: 1.5;
+}
+
+.form-section legend {
+  font-size: 24px;
+  font-family: Franklin Gothic;
+}
+
+.form-row input:focus {
+  outline: none;
+  border-color: red;
+}
+.form-row-full textarea:focus {
+  outline: none;
+  border-color: red;
+}
+.form-row select:focus {
+  outline: 2px solid purple;
+  outline-offset: 2px;
+}
+
+/* submit and reset buttons are different from each other */
+.btn-primary:focus {
+  outline: 2px solid #5cb8b2;
+  outline-offset: 2px;
+}
+
+.btn-primary:hover {
+  font-weight: bold;
+  font-family: Cambria;
+  color: #5cb8b2;
+  font-size: 15px;
+}
+
+.btn-secondary:focus {
+  outline: 2px solid #a6192e;
+  outline-offset: 2px;
+}
+
+.btn-secondary:hover {
+  font-weight: bold;
+  font-family: Cambria;
+  color: #a6192e;
+  font-size: 15px;
+}
+
+.color-group {
+  color: #4300c07c;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.color-options input:focus {
+  outline: none;
+  border-color: red;
+}
+
+/* contain whole form in a card-like layout*/
+
+/*style "before you register" aside with home page spotlight */
+/*.registration-rules aside{
+  width: 40%;
+  padding: 200px;
+  margin: 20px;
+  font-style: italic;
+}
+
+.registration-rules aside > li{
+  margin: 0.5rem;
+} */
+
+.registration-rules {
+  background: #a6192e;
+  border: 10px solid #425563;
+  padding: 30px;
+  font-family: Droid Sans;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.registration-rules {
+  text-align: center;
+  font-family: Overpass;
+  font-size: 23px;
+  color: #ceb888;
+}
+
+/* 4. Officiate Page */
+/* style two role articles and official photo consistently with home page article pattern*/
+.role-article {
+  max-width: 560px;
+  font-family: Georgia;
+}
+
+.role-photo {
+  border: 6px solid black;
+  border-radius: 4px;
+  padding: 10px;
+  background: violet;
+}
+
+/* open positions styled consistently with schedule page tables*/
+.roles-table {
+  border: 5px solid #dfd1a7;
+  border-radius: 8px;
+  max-width: 1000px;
+  color: #782f40;
+  padding: 10px 20px;
+}
+
+.roles-table caption {
+  margin-bottom: 0.5rem;
+}
+
+/* distinct header row*/
+.roles-table thead {
+  font-size: larger;
+}
+
+.roles-table tr {
+  text-align: center;
+}
+
+/* alternating row colors*/
+.roles-table tbody tr:nth-child(2n + 1) {
+  background-color: grey;
+}
+
+/*hover highlight on row*/
+.roles-table tbody tr:hover {
+  background-color: yellow;
+}
+
+/* application styled consistently with registration form; reused classes*/
+.apply-form {
+  padding: 10px 40px;
+  border: 7px dotted #425563;
+}
+.apply-form {
+  color: #782f40;
+  background: #ceb888;
+
+  line-height: 1.5;
+}
+
+.availability-group legend {
+  font-size: 24px;
+  font-family: Franklin Gothic;
+}
+
+/* ordered list given a custom visual treatment*/
+.next-steps {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 7px dashed #070733;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 5000px;
+  color: #782f40;
+  padding: 10px 20px;
+  justify-content: center;
+  text-align: left;
+}

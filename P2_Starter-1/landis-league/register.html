@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register a Team &ndash; Landis League</title>
+  <meta name="description" content="Register a team for Landis League intramural sports at FSU.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="images/logo.png" alt="Landis League logo">
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule &amp; Standings</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.html">Register a Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="officiate.html">Officiate</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>Register a Team</h1>
+  <p class="page-intro">Registration for the Spring season closes two weeks before the first game. One captain registers per team; you'll confirm your full roster at your first game.</p>
+
+  <!-- ============ REGISTRATION FORM ============ -->
+  <form class="register-form" method="post" action="#">
+
+    <fieldset class="form-section">
+      <legend>Team Information</legend>
+
+      <div class="form-row">
+        <label for="team-name">Team Name</label>
+        <input type="text" id="team-name" name="team-name" required>
+      </div>
+
+      <div class="form-row">
+        <label for="sport">Sport</label>
+        <select id="sport" name="sport" required>
+          <optgroup label="Indoor">
+            <option value="basketball">Basketball</option>
+            <option value="volleyball">Sand Volleyball</option>
+            <option value="dodgeball">Dodgeball</option>
+          </optgroup>
+          <optgroup label="Outdoor">
+            <option value="flag-football">Flag Football</option>
+            <option value="soccer">Soccer</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="division">Division</label>
+        <select id="division" name="division">
+          <option value="competitive">Competitive</option>
+          <option value="recreational">Recreational</option>
+          <option value="co-rec">Co-Rec</option>
+        </select>
+      </div>
+
+      <fieldset class="color-group">
+        <legend>Jersey Color</legend>
+        <div class="color-options">
+          <label class="color-option">
+            <input type="radio" name="jersey-color" value="garnet" checked>
+            <span class="swatch swatch-garnet" aria-hidden="true"></span> Garnet
+          </label>
+          <label class="color-option">
+            <input type="radio" name="jersey-color" value="gold">
+            <span class="swatch swatch-gold" aria-hidden="true"></span> Gold
+          </label>
+          <label class="color-option">
+            <input type="radio" name="jersey-color" value="black">
+            <span class="swatch swatch-black" aria-hidden="true"></span> Black
+          </label>
+          <label class="color-option">
+            <input type="radio" name="jersey-color" value="white">
+            <span class="swatch swatch-white" aria-hidden="true"></span> White
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="form-row">
+        <label for="roster-size">Expected Roster Size</label>
+        <input type="number" id="roster-size" name="roster-size" min="6" max="20" value="10">
+      </div>
+    </fieldset>
+
+    <fieldset class="form-section">
+      <legend>Captain Information</legend>
+
+      <div class="form-row">
+        <label for="captain-name">Captain Name</label>
+        <input type="text" id="captain-name" name="captain-name" required>
+      </div>
+
+      <div class="form-row">
+        <label for="captain-email">FSU Email</label>
+        <input type="email" id="captain-email" name="captain-email" required>
+      </div>
+
+      <div class="form-row">
+        <label for="captain-phone">Phone</label>
+        <input type="tel" id="captain-phone" name="captain-phone">
+      </div>
+
+      <div class="form-row">
+        <label for="class-standing">Class Standing</label>
+        <select id="class-standing" name="class-standing">
+          <option>Freshman</option>
+          <option>Sophomore</option>
+          <option>Junior</option>
+          <option>Senior</option>
+          <option>Graduate</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <div class="form-row form-row-full">
+      <label for="notes">Anything else we should know?</label>
+      <textarea id="notes" name="notes" rows="4" maxlength="300"></textarea>
+    </div>
+
+    <div class="form-row form-row-checkbox">
+      <input type="checkbox" id="agree" name="agree" required>
+      <label for="agree">I have read and agree to the Intramural Code of Conduct</label>
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary">Submit Registration</button>
+      <button type="reset" class="btn btn-secondary">Reset</button>
+    </div>
+  </form>
+
+  <!-- ============ RULES ASIDE ============ -->
+  <aside class="registration-rules" aria-labelledby="rules-heading">
+    <h2 id="rules-heading">Before You Register</h2>
+    <ul>
+      <li>Every player must have an active FSU student ID and Campus Rec waiver on file.</li>
+      <li>Rosters lock after your team's second game &mdash; no additions after that.</li>
+      <li>A $25 forfeit deposit is refunded at season's end if your team plays every scheduled game.</li>
+      <li>Co-Rec division requires at least three players of each gender on the field at all times.</li>
+    </ul>
+  </aside>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-block">
+      <h2 class="footer-heading">Landis League</h2>
+      <address class="footer-address">
+        FSU Campus Recreation<br>
+        Fields at Landis Green<br>
+        Tallahassee, FL 32306<br>
+        Office: <a href="tel:+18505550142">(850) 555-0142</a><br>
+        Email: <a href="mailto:play@landisleague.example.edu">play@landisleague.example.edu</a>
+      </address>
+    </div>
+    <nav class="footer-nav" aria-label="Social media">
+      <ul class="footer-social">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Bluesky</a></li>
+        <li><a href="#">GroupMe</a></li>
+      </ul>
+    </nav>
+  </div>
+  <p class="footer-copy">&copy; 2026 Landis League. A Florida State University Campus Recreation program.</p>
+</footer>
+
+</body>
+</html>
